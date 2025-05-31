@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   
@@ -39,17 +40,16 @@ const headingRef = useRef(null);
   </h1>
 </div>
 
-
       {/* Navigation Links */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 px-10 pt-10 pb-20 text-white text-base justify-space-between">
         {/* Pages */}
         <div>
           <p className="italic text-gray-300">(Pages)</p>
           <ul className="mt-2 space-y-2 font-semibold">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/service">Service</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/letstalk">Contact</Link></li>
           </ul>
         </div>
 
@@ -57,11 +57,11 @@ const headingRef = useRef(null);
         <div>
           <p className="italic text-gray-300">(CMS)</p>
           <ul className="mt-2 space-y-2 font-semibold">
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Work Single</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Blog Single</a></li>
-            <li><a href="#">Pricing</a></li>
+            <li><Link to="/work">Work</Link></li>
+            <li><Link to="/work/1">Work Single</Link></li>
+            <li><Link to="/blog">Blog</Link></li>
+            <li><Link to="/blog/1">Blog Single</Link></li>
+            <li><Link to="/pricing">Pricing</Link></li>
           </ul>
         </div>
 
@@ -69,11 +69,11 @@ const headingRef = useRef(null);
         <div>
           <p className="italic text-gray-300">(Utility Pages)</p>
           <ul className="mt-2 space-y-2 font-semibold">
-            <li><a href="#">404</a></li>
-            <li><a href="#">Password Page</a></li>
-            <li><a href="#">Changelog</a></li>
-            <li><a href="#">Licensing</a></li>
-            <li><a href="#">Styleguide</a></li>
+            <li><Link to="/404">404</Link></li>
+            <li><Link to="/password">Password Page</Link></li>
+            <li><Link to="/changelog">Changelog</Link></li>
+            <li><Link to="/licensing">Licensing</Link></li>
+            <li><Link to="/styleguide">Styleguide</Link></li>
           </ul>
         </div>
 
@@ -81,10 +81,10 @@ const headingRef = useRef(null);
         <div>
           <p className="italic text-gray-300">(Socials)</p>
           <ul className="mt-2 space-y-2 font-semibold">
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Behance</a></li>
-            <li><a href="#">Dribbble</a></li>
-            <li><a href="#">Pinterest</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://behance.net" target="_blank" rel="noopener noreferrer">Behance</a></li>
+            <li><a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribbble</a></li>
+            <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
           </ul>
         </div>
       </div>

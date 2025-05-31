@@ -22,7 +22,6 @@ const App = () => {
       <Services/>
       <Servicelast/>
       <Testomonial/>
-  
       <Footer/>
     </>
   );

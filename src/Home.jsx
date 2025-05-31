@@ -7,6 +7,10 @@ import Navbarr from './assets/Components/Navbar/Navbarr.jsx';
 import Innerpage from './assets/Pages/Innerpage';
 import Ourservice from './assets/Pages/Ourservice';
 import Notfound from './assets/Components/404/Notfound.jsx';
+import About from './assets/Pages/About.jsx';
+import Blog from './assets/Pages/Blog.jsx';
+import Bloginnerpage from './assets/Pages/Bloginnerpage.jsx';
+
 
 
 function AppRouter() {
@@ -39,7 +43,10 @@ function AppRouter() {
         <Route path="/letstalk" element={<Letstalk />} />
         <Route path="/work" element={<Work />} />
          <Route path="/service" element={<Ourservice/>}/>
+         <Route path="/about" element={<About/>}/>
+         <Route path="/blog" element= {<Blog/>} />
          <Route path="/project/:id" element={<Innerpage />}/>
+          <Route path="/blog/:id" element={<Bloginnerpage />} />
          <Route path="*" element= {<Notfound/>} />
         
       </Routes>

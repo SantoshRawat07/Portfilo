@@ -23,9 +23,9 @@ const Letstalk = () => {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
       if (currentScroll > lastScroll.current) {
-        setShowNavbar(false); // Scrolling down
+        setShowNavbar(false);
       } else {
-        setShowNavbar(true); // Scrolling up
+        setShowNavbar(true); 
       }
       lastScroll.current = currentScroll;
     };
