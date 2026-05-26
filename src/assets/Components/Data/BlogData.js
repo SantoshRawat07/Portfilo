@@ -5,47 +5,59 @@ import a4 from '../../Image/a4.webp';
 import a3 from '../../Image/a3.webp';
 import a5 from '../../Image/a5.webp';
 import a6 from '../../Image/a6.avif';
+
 const blogData = [
-  { id:1,
-    category: "Studio",
-    title: "5 Essential Branding Tips for Businesses",
+  {
+    id: 1,
+    category: "Development",
+    title: "Top Website Development Trends Driving Business Growth",
     description:
-      "Discover key strategies to create a memorable and impactful brand for your small business.",
+      "Explore modern web development strategies, AI integration, and SEO techniques helping businesses grow faster online.",
     image: a1,
   },
-  { id:2,
-    category: "Design",
-    title: "How to Design a User-Friendly Website",
+
+  {
+    id: 2,
+    category: "SEO",
+    title: "How Modern Websites Improve SEO and Online Visibility",
     description:
-      "Learn practical tips for designing websites that are both visually appealing and user-friendly.",
+      "Learn how responsive design, fast performance, and optimized content help websites rank higher on search engines.",
     image: a2,
   },
-  { id:3,
-    category: "Design",
-    title: "The Importance of Responsive Design",
+
+  {
+    id: 3,
+    category: "Frontend",
+    title: "Latest Frontend Technologies Transforming Web Development",
     description:
-      "Why responsive design is crucial for enhancing experience and increasing conversions.",
+      "Discover how React, Next.js, TypeScript, and modern UI technologies are shaping high-performance websites.",
     image: a3,
   },
-  {id:4,
-    category: "Branding",
-    title: "Top 3 web development Trends in 2025",
+
+  {
+    id: 4,
+    category: "Technology",
+    title: "Why High-Performance Websites Matter in 2026",
     description:
-      "Stay ahead with the latest web development trends shaping digital experiences and online platforms.",
+      "Understand how speed, security, cloud hosting, and accessibility improve user experience and business success.",
     image: a4,
   },
-  { id:5,
-    category: "Studio",
-    title: "How to Create an effective brand identity",
+
+  {
+    id: 5,
+    category: "Marketing",
+    title: "Content Marketing Strategies for SEO and Website Growth",
     description:
-      "Master the techniques that make brand visuals truly unforgettable and aligned with your message.",
+      "Discover powerful content marketing and SEO techniques businesses use to increase traffic and brand authority.",
     image: a5,
   },
-  { id:6,
-    category: "Studio",
-    title: "Boost engagement thought thoughtful ux design",
+
+  {
+    id: 6,
+    category: "Innovation",
+    title: "The Future of Web Development and Digital Experiences",
     description:
-      "See how consistent design systems streamline creative work across large teams and platforms.",
+      "Explore emerging technologies like AI, voice search, PWAs, and headless CMS shaping the future of the web.",
     image: a6,
   },
 ];

@@ -1,112 +1,67 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import blue from '../../Image/blue.webp';
-import black from '../../Image/black.webp';
-import orange from '../../Image/orange.webp';
-import brinjal from '../../Image/brinjal.webp';
-import green from '../../Image/green.webp';
-import lightgreen from '../../Image/lightgreen.webp';
-import red from '../../Image/red.webp';
-
-const images = [blue, orange, brinjal, green, lightgreen, red];
 
 const sections = [
   {
-    title: 'BRANDING AWARDS',
+    title: 'JOIN BSC.IT AT TECHSPIRE COLLEGE',
     items: [
-      'Brand Excellence Awards (2024)',
-      'Iconic Identity Awards (2024)',
-      'Visionary Brand Honors (2023)',
-      'Golden Mark Awards (2023)',
-      'Brand Innovation Awards (2022)',
-      'Signature Branding Awards (2022)',
+      'Joining BSc.IT Program (2024)',
+      'Learning New Technologies (2024)',
+      'Interest in Web Development (2024)',
+      'Join Frontend course at skillskishya (2024)',
+      'Learn Responsive Design and React (2025)',
+      'Build foodland project (2025)',
     ],
   },
   {
-    title: 'WEBSITE AWARDS',
+    title: 'FRONT-END INTERN AT WEBX-NEPAL',
     items: [
-      'Digital Masterpiece Awards (2024)',
-      'Site Innovation Awards (2023)',
-      'Creative Site Honors (2023)',
-      'Modern UI Excellence (2022)',
+      'Join first internship (2025)',
+      'learn gsap animations (2025)',
+      'Get to know about office work (2025)',
+      'Work in a real travel website project (2025)',
     ],
   },
   {
-    title: 'DEGITAL AWARDS',
+    title: 'FRONT-END INTERN AT NEPSE TRADING',
     items: [
-      'Digital Masterpiece Awards (2024)',
-      'Web Excellence Awards (2024)',
-      'Pixel Perfection Honors (2023)',
-      'Innovation in Web Design Awards(2023)',
-      'Best in User Experience Awards(2022)',
-      'Interactive Design Awards (2022)',
+      'Join internship at NEPSE Trading (2025)',
+      'Work on real trading data (2025)',
+      'Get to understand how trading works (2025)',
+      'Learn how backend systems work (2025)',
+      'Work on api real data fetching (2025)',
+      'Learn Backend knowledge of Nest, postgres(2025)',
     ],
   },
 ];
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (i) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: i * 0.1,
-      duration: 0.6,
-      ease: 'easeOut',
-    },
-  }),
-};
-
 const AwardsLayout = () => {
   return (
-    <div className="flex flex-col md:flex-row h-screen md:h-full">
-      {/* Left Scrollable Image Column */}
-      <div className="w-full md:w-1/2 max-h-96 md:max-h-screen overflow-y-auto thin-scrollbar p-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {images.map((src, idx) => (
-            <motion.div
-              key={idx}
-              custom={idx}
-              variants={fadeUp}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              className="relative shadow-xl rounded-xl overflow-hidden"
-            >
-              <img
-                src={src}
-                alt={`Card ${idx + 1}`}
-                className="w-full h-72 md:h-96 object-cover transition-transform duration-300 hover:grayscale"
-              />
-              <div className="absolute inset-0 bg-opacity-10 pointer-events-none" />
-            </motion.div>
-          ))}
-        </div>
-      </div>
-
-      {/* Right Scrollable Awards */}
-      <div className="w-full md:w-1/2 max-h-96 md:max-h-screen overflow-y-auto thin-scrollbar bg-white p-6 space-y-16 lg:mb-18">
-        {sections.map((section, idx) => (
-          <motion.div
-            key={idx}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: idx * 0.2, duration: 0.7 }}
-            viewport={{ once: true, amount: 0.3 }}
-          >
-            <h1 className="text-2xl md:text-4xl font-black mb-6">
-              {section.title}
-            </h1>
-            <ul className="space-y-3">
-              {section.items.map((item, i) => (
-                <li key={i} className="text-base md:text-lg border-b border-gray-200 pb-2">
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-        ))}
-      </div>
+    <div className="w-full min-h-screen overflow-y-auto bg-white p-6 space-y-16">
+      {sections.map((section, idx) => (
+        <motion.div
+          key={idx}
+          className="w-full"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: idx * 0.2, duration: 0.7 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <h1 className="text-2xl md:text-4xl font-black mb-6 lg:px-12">
+            {section.title}
+          </h1>
+          <ul className="space-y-3 w-full lg:px-12">
+            {section.items.map((item, i) => (
+              <li
+                key={i}
+                className="text-base md:text-lg border-b border-gray-200 pb-2 w-full"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+        </motion.div>
+      ))}
     </div>
   );
 };

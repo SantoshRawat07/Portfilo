@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
-import mac from './../../Image/mac.webp';
+import website from './../../Image/website.jpg';
 
 const Services = () => {
   const textContainerRef = useRef();
@@ -42,7 +42,7 @@ const Services = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 w-full">
         {/* Image first on mobile (order-1), second on md+ (order-2) */}
         <div className="order-1 md:order-2 w-full h-[400px] md:h-[690px]">
-          <img src={mac} alt="Book" className="w-full h-full object-cover" />
+          <img src={website} alt="Book" className="w-full h-full object-cover" />
         </div>
 
         {/* Text second on mobile (order-2), first on md+ (order-1) */}

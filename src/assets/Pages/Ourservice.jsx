@@ -75,7 +75,7 @@ const headingRef = useRef(null);
             <h2 ref={headingRef} className="text-4xl md:text-4xl lg:text-6xl font-extrabold lg:ml-20">
                BRAND <br/> STRATEGY</h2>
           </div>
-          <div className="lg:-ml-[150px] overflow-y-auto max-h-96 whitespace-pre-line mt-4 hide-scroller max-h-screen ">
+          <div className="lg:-ml-[150px] overflow-y-auto whitespace-pre-line mt-4 hide-scroller max-h-screen ">
             <h2 className="text-3xl font-bold">
               We create compelling brand identities that resonate with your audience, helping you establish a strong presence and foster meaningful connections.
             </h2>
@@ -122,7 +122,7 @@ const headingRef = useRef(null);
             <h2 ref={headingRef} className="text-4xl md:text-4xl lg:text-6xl font-extrabold lg:ml-20">
                WEBSITE <br/> DESIGN</h2>
           </div>
-          <div className="lg:-ml-[150px] overflow-y-auto max-h-96 whitespace-pre-line mt-4 hide-scroller max-h-screen ">
+          <div className="lg:-ml-[150px] overflow-y-auto whitespace-pre-line mt-4 hide-scroller max-h-screen ">
             <h2 className="text-3xl font-bold">
               We create compelling brand identities that resonate with your audience, helping you establish a strong presence and foster meaningful connections.
             </h2>
@@ -171,7 +171,7 @@ const headingRef = useRef(null);
             <h2 ref={headingRef} className="text-4xl md:text-4xl lg:text-6xl font-extrabold lg:ml-20">
                UI/UX <br/> DESIGN</h2>
           </div>
-          <div className="lg:-ml-[150px] overflow-y-auto max-h-96 whitespace-pre-line mt-4 hide-scroller max-h-screen ">
+          <div className="lg:-ml-[150px] overflow-y-auto whitespace-pre-line mt-4 hide-scroller max-h-screen ">
             <h2 className="text-3xl font-bold">
               We create compelling brand identities that resonate with your audience, helping you establish a strong presence and foster meaningful connections.
             </h2>
@@ -202,55 +202,7 @@ const headingRef = useRef(null);
 
           </div>
         </div>
-         {/* what our client say */}
-      <div ref={headingRef} className="project mb-20 px-4 md:px-16 lg:px-32">
-        <h1 className="gsap-animate font-extrabold uppercase text-[40px] md:text-[80px] lg:text-[150px] xl:text-[200px]
-         leading-none mt-10 mb-8 md:mb-4 lg:mb-2">
-          What our
-        </h1>
-        <div className="space-y-2 md:space-y-2 lg:space-y-1">
-           <h1 className="gsap-animate font-extrabold uppercase text-[40px] md:text-[80px] lg:text-[150px] xl:text-[200px]
-         leading-none mt-2 mb-8 md:mb-4 lg:mb-2">
-          clients
-        </h1>
-           <h1 className="gsap-animate font-extrabold uppercase text-[40px] md:text-[80px] lg:text-[150px] xl:text-[200px]
-         leading-none mt-2 mb-8 md:mb-4 lg:mb-2">
-          says
-        </h1>
-          <div className="space-y-2 md:space-y-2 lg:space-y-1 lg:-mb-10">
-          <p className="gsap-animate font-semibold text-[20px] md:text-[36px] lg:text-[60px]">
-         Hear our clients about their success
-          </p>
-          <p className="gsap-animate font-semibold text-[20px] md:text-[36px] lg:text-[60px] lg:-mt-10">
-          stories and experiences with us.
-          </p>
-        </div>
-        </div>
-      </div>
-      {/* box */}
-       <section className="w-full flex flex-col lg:flex-row md:-mt-10 mb-10 px-4 md:px-16 lg:px-2 lg:py-10 mt-20">
-      <div className="w-full lg:w-1/2 h-50 lg:h-150">
-        <img
-          src={box}
-          alt="Box Design"
-          className="w-full lg:w-[700px] lg:h-full object-cover md:h-150"
-        />
-      </div>
-
-      <div className="w-full lg:w-200 bg-gray-200 text-black flex flex-col justify-center py-10 md:px-10 lg:-ml-16">
-        <div className="text-5xl font-bold text-black mb-6 md:mt-4"> 
-          <img src= {arrow} className='h-8 w-8'></img></div>
-        <p className="italic text-gray-500 mb-2">(Utosia)</p>
-        <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4">
-          Exceptional Branding That<br className="hidden md:block" />
-          Elevated Our Identity.
-        </h2>
-        <p className="text-gray-700 text-sm md:text-base">
-          Their strategic approach completely transformed our brand. We’ve seen a huge
-          increase in recognition and client engagement.
-        </p>
-      </div>
-    </section>
+        {/* our process */}
       <div className="project mb-10 px-4 md:px-16 lg:px-20 lg:py-10 mt-20">
         <h1 
           className="font-extrabold uppercase text-[40px] md:text-[60px] lg:text-[150px] leading-none mb-10 break-words opacity-"
@@ -270,9 +222,6 @@ const headingRef = useRef(null);
         </div>
       </div>
   <Reuseprocess /> 
-
-
-
     </div>
     <Footer/>
     </>

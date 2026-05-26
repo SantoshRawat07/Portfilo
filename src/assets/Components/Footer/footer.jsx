@@ -35,7 +35,7 @@ const headingRef = useRef(null);
       {/* Logo */}
  <div className="text-white text-left pt-10 ml-10">
   <h1 ref={headingRef} className="lg:text-[10rem] md:text-[5rem] md:-ml-[20px] lg:font-extrabold md:font-extrabold leading-none">
-    KAYO
+    LET'S TALK
     <span className="align-center lg:text-[6rem] md:text-[4rem]">©</span>
   </h1>
 </div>
@@ -67,13 +67,13 @@ const headingRef = useRef(null);
 
         {/* Utility Pages */}
         <div>
-          <p className="italic text-gray-300">(Utility Pages)</p>
+          <p className="italic text-gray-300">(Services)</p>
           <ul className="mt-2 space-y-2 font-semibold">
+            <li><Link to="/service">Creative website</Link></li>
+            <li><Link to="/service">App development</Link></li>
+            <li><Link to="/service">SEO</Link></li>
+            <li><Link to="/service">Digital Marketing</Link></li>
             <li><Link to="/404">404</Link></li>
-            <li><Link to="/password">Password Page</Link></li>
-            <li><Link to="/changelog">Changelog</Link></li>
-            <li><Link to="/licensing">Licensing</Link></li>
-            <li><Link to="/styleguide">Styleguide</Link></li>
           </ul>
         </div>
 
@@ -81,15 +81,15 @@ const headingRef = useRef(null);
         <div>
           <p className="italic text-gray-300">(Socials)</p>
           <ul className="mt-2 space-y-2 font-semibold">
+            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
             <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="https://behance.net" target="_blank" rel="noopener noreferrer">Behance</a></li>
-            <li><a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribbble</a></li>
-            <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">Github</a></li>
           </ul>
         </div>
       </div>
     <div className="text-center mt-10 md:mt-10 mb-5 lg:text-4xl md:text-2xl">
-  <p className="text-4xl md:text-2xl">Made by Gola Templates</p>
+  <p className="text-4xl md:text-2xl">Copyright © 2026 Santosh Rawat. All rights reserved.</p>
 </div>
 
     </div>

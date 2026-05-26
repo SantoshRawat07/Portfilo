@@ -51,7 +51,47 @@
  .hide-scrollbar {
   -ms-overflow-style: none;  
    scrollbar-width: none;   
- } 
+ }
+
+/* Tech Stack Icon Styling */
+.tech-icon-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-icon-wrapper img {
+  filter: grayscale(100%) brightness(0.75);
+  transition: all 0.3s ease;
+}
+
+.tech-icon-wrapper:hover img {
+  filter: grayscale(0%) brightness(1);
+  transform: scale(1.1);
+}
+
+.tech-icon-wrapper span {
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+/* Tech Stack Looping Animation */
+.tech-stack-loop {
+  animation: scrollLoop 25s linear infinite;
+}
+
+.tech-stack-loop:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 2rem));
+  }
+}
 
  /* Thin Scrollbar */
 .thin-scrollbar::-webkit-scrollbar {
@@ -72,3 +112,11 @@
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
 }
+
+.marquee-wrap { overflow: hidden; width: 100%; padding: 6px 0; }
+.marquee-track { display: flex; width: max-content; animation: scroll-left 18s linear infinite; }
+.marquee-track.reverse { animation: scroll-right 22s linear infinite; }
+.marquee-wrap:hover .marquee-track { animation-play-state: paused; }
+
+@keyframes scroll-left  { 0% { transform: translateX(0); }    100% { transform: translateX(-50%); } }
+@keyframes scroll-right { 0% { transform: translateX(-50%); } 100% { transform: translateX(0); } }

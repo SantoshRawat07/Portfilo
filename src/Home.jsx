@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Letstalk from './assets/Pages/Letstalk';
 import App from './App';
-import Work from './assets/Pages/Work';
+import Projects from './assets/Pages/projects.jsx';
 import Navbarr from './assets/Components/Navbar/Navbarr.jsx';
 import Innerpage from './assets/Pages/Innerpage';
 import Ourservice from './assets/Pages/Ourservice';
@@ -41,7 +41,7 @@ function AppRouter() {
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/letstalk" element={<Letstalk />} />
-        <Route path="/work" element={<Work />} />
+        <Route path="/projects" element={<Projects />} />
          <Route path="/service" element={<Ourservice/>}/>
          <Route path="/about" element={<About/>}/>
          <Route path="/blog" element= {<Blog/>} />

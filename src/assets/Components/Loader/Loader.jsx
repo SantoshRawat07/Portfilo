@@ -36,7 +36,7 @@ const Loader = () => {
         className="text-white font-extrabold uppercase p-8 tracking-widest"
         style={{ fontSize: '140px' }}
       >
-        KAYO©
+        SANTOSH©
       </h1>
     </div>
   );

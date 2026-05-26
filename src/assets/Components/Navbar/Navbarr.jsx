@@ -42,13 +42,13 @@ function Navbarr({ visible = true, scrolledUp = true }) {
         
         {/* Left: Logo */}
       <div className="flex-shrink-0">
-  <Link to="/" className="text-4xl font-extrabold">KAYO</Link>
+  <Link to="/" className="text-4xl font-extrabold">DEV.SRC</Link>
 </div>
 
 {/* Center: Nav Links */}
 <div className="hidden lg:flex flex-1 justify-center">
   <ul className="flex space-x-12 font-semibold">
-    <li><Link to="/work" className="nav-link">Work</Link></li>
+    <li><Link to="/projects" className="nav-link">Projects</Link></li>
     <li><Link to="/service" className="nav-link">Service</Link></li>
     <li><Link to="/about" className="nav-link">About</Link></li>
     <li><Link to="/blog" className="nav-link">Blog</Link></li>
@@ -76,7 +76,7 @@ function Navbarr({ visible = true, scrolledUp = true }) {
           className="fixed inset-0 bg-white z-50 w-full h-screen flex flex-col items-center px-6 pt-40 md:pt-52"
         >
           {/* Mobile Top Bar */}
-          <div className="absolute top-6 left-6 text-2xl font-extrabold text-black">KAYO</div>
+          <div className="absolute top-6 left-6 text-2xl font-extrabold text-black">DEV.SRC</div>
           <div className="absolute top-6 right-6 flex items-center space-x-4">
             <Link to="/letstalk" className="underline font-semibold text-black">Let's Talk</Link>
             <button onClick={closeMenu}>
@@ -87,7 +87,7 @@ function Navbarr({ visible = true, scrolledUp = true }) {
           {/* Mobile Nav Links */}
           <div className="bg-white w-full max-w-xs p-6 flex flex-col items-center">
             {[
-              { name: 'Work', path: '/work' },
+              { name: 'Projects', path: '/projects' },
               { name: 'Service', path: '/service' },
               { name: 'About', path: '/about' },
               { name: 'Blog', path: '/blog' },

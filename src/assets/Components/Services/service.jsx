@@ -47,10 +47,7 @@ const Service = () => {
             Discover our tailored services
           </p>
           <p className="gsap-animate font-semibold text-[20px] md:text-[36px] lg:text-[60px] lg:-mt-10">
-            designed to elevate your brand,
-          </p>
-          <p className="gsap-animate font-semibold text-[20px] md:text-[36px] lg:text-[60px] lg:-mt-10">
-            enhance user experience.
+            designed to elevate your brand.
           </p>
         </div>
       </div>

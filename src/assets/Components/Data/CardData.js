@@ -1,130 +1,109 @@
-import foot from '../../Image/foot.webp';
-import acme from '../../Image/acemepic.webp';
-import cap from '../../Image/cap.webp';
-import capboy from '../../Image/newcap.webp';
-import bag from '../../Image/bag.webp';
-import topkanba from '../../Image/topkanba.webp';
-import kanbapic from '../../Image/kanbapic.webp';
-import camera from '../../Image/camera.webp';
-import tent from '../../Image/tent.webp';
-import boy from '../../Image/boy.webp';
-import bat from '../../Image/bat.webp';
-import goldpic from '../../Image/goldpic.webp';
-import footgold from '../../Image/footgold.webp';
-import handman from '../../Image/handman.webp';
-import capman from '../../Image/capman.webp';
-import newcar from '../../Image/newcar.webp';
-import outopic from '../../Image/outopic.webp';
-import sec from '../../Image/sec.webp';
-import carlight from '../../Image/carlight.webp';
-import lastcar from '../../Image/lastcar.webp';
+// Import all images
+import foodland from '../../Image/foodlandweb.png';
+import homesphere from '../../Image/homesphere.png';
+import trading from '../../Image/trading.png';
+import artis from '../../Image/artist.png';
+
 const cardData = {
-  acme: {
-    id: "Acme",
-    label: "Acme",
-    title: "ACME",
-    subtitle: "Full rebranding for a tech startup",
-    subtitles: " aiming to disrupt.",
-    client: "Acme",
+  foodland: {
+    id: "foodland",
+    label: "Foodland",
+    title: "FOODLAND",
+    subtitle: "Recipe discovery and food",
+    subtitles: "ordering platform.",
+    client: "Foodland",
     year: "2024",
-    services: "UI/UX",
-    topImage: foot,
-    descriptionHeading: "INNOVATIVE BRANDING",
-    subheading: "The Acme project involved a full rebranding initiative for a tech startup aiming to disrupt the logistics industry.",
-    description: `We began with an in-depth market analysis, identifying key differentiators and positioning Acme as an innovative leader in its space. Our team worked closely with the client to craft a unique brand identity that resonated with both investors and customers, focusing on a sleek, modern aesthetic paired with a dynamic color palette.
+    services: "Web Development",
+    topImage: foodland,
+    descriptionHeading: "FOOD ORDERING SYSTEM",
+    subheading:
+      "Foodland is a modern recipe discovery and food ordering platform designed for users to explore delicious meals and order food easily.",
+    description: `The Foodland project was developed to provide users with a smooth and engaging food browsing experience. The platform allows users to discover recipes, explore food categories, and place food orders through a clean and responsive interface.
 
-From logo design to typography and messaging, every element was designed to reflect Acme’s cutting-edge technology and commitment to efficiency. The website was designed with an intuitive user interface, ensuring easy navigation for both B2B and B2C users. This allowed potential partners to quickly understand Acme’s value proposition and services.
+The website includes modern UI sections for featured foods, recipe collections, customer engagement, and dynamic food cards. We focused on creating an easy navigation system so users can quickly search and access their favorite dishes.
 
-Post-launch, Acme experienced a significant increase in brand visibility and engagement. Our efforts helped drive traffic to their website and improve user retention rates. The rebranding also facilitated a successful round of funding, providing Acme with the momentum needed to continue its growth trajectory. The project stands as a testament to the power of strategic branding and user-centered design.
+The project was built with responsiveness and performance in mind, ensuring a seamless experience across desktop, tablet, and mobile devices. The design combines attractive food visuals with user-friendly layouts to improve interaction and usability.
 
-Post-launch, Acme saw a significant improvement in brand recognition and customer engagement.`,
-    galleryImages: [
-      acme,
-      cap,
-      bag,
-      capboy,
-    ],
+Foodland showcases both frontend design creativity and practical e-commerce functionality in a real-world food service platform.`,
+    livePreviewLink: "https://recipe-website-tqzk.vercel.app/",
+    viewCodeLink: "https://github.com/SantoshRawat07/Recipe-website",
+    innerPageImage: foodland,
   },
-  kanba: {
-    id: "kanba",
-    label: "Kanba",
-    title: "KANBA",
-    subtitle: "We delivered a sleek Framer",
-    subtitles: "development project",
-    client: "Kanba",
+
+  trading: {
+    id: "trading",
+    label: "Trading",
+    title: "TRADING DASHBOARD",
+    subtitle: "Interactive dashboard for",
+    subtitles: "trading analytics.",
+    client: "Trading",
     year: "2024",
-    services: "Design",
-    topImage: topkanba,
-    descriptionHeading: "SLEEK WEBSITE",
-    subheading: "For Kanba, a leading creative agency, we delivered a sleek Framer development project that brought their online presence to life.",
-    description: `Kanba wanted a website that not only showcased their diverse portfolio but also reflected their bold, forward-thinking approach to design. We aimed to build a site that was both visually stunning and highly functional, creating an immersive experience for users.
+    services: "Dashboard UI",
+    topImage: trading,
+    descriptionHeading: "DASHBOARD UI",
+    subheading:
+      "A modern trading dashboard designed to visualize stock and trading data using charts and interactive analytics.",
+    description: `The Trading Dashboard project was created to present trading and financial information in a visually organized and easy-to-understand format. The dashboard includes multiple chart sections, market overview panels, analytics cards, and trading performance indicators.
 
-Working closely with Kanba’s creative team, we developed a Framer site that allowed for easy content management while maintaining the high level of design sophistication they were known for. The site features smooth animations, clean transitions, and a well-organized layout that emphasizes their work without overwhelming the user.
+We used modern UI design principles to build a clean interface that highlights important trading insights. Interactive charts were integrated to showcase price movements, market trends, and statistical data in real time.
 
-We ensured that the website was fully responsive, providing an optimized experience across devices. From the initial wireframes to final deployment, the focus was on creating a digital experience that mirrored Kanba’s brand ethos—creativity without limits. After the launch, the website helped Kanba attract new clients, reinforcing their position as an industry leader.
+The layout was optimized for responsiveness and usability, allowing traders and users to monitor data efficiently across devices. The project demonstrates strong frontend skills in dashboard development, data presentation, and component structuring.
 
-We achieved a 30% increase in conversion rate and higher user retention.`,
-    galleryImages: [
-      kanbapic,
-      camera,
-      boy,
-      tent,
-    ],
-  },
-    outosia: {
-    id: "outosia",
-    label: "Outosia",
-    title: "OUTOSIA",
-    subtitle: "Utosia came to us looking for a full-",
-    subtitles: "service digital solution.",
-    client: "Outisia",
-    year: "2023",
-    services: "Branding",
-    topImage: newcar,
-    descriptionHeading: "DYNAMIC WEBSITE",
-    subheading:"Utosia, an emerging e-commerce platform for sustainable fashion, came to us looking for a full-service digital solution.",
-    description: `They needed a site that not only reflected their commitment to eco-friendly products but also provided a seamless shopping experience. We focused on creating an e-commerce platform that was visually appealing, easy to navigate, and optimized for conversions.
-
-The design incorporates bold imagery, earthy tones, and clean lines to align with Utosia’s sustainable values. Every product page was carefully crafted to highlight the unique aspects of the brand's clothing, from materials to ethical production methods. We implemented a streamlined checkout process, ensuring minimal friction for users, and integrated advanced search functionalities to help shoppers easily find the products they’re looking for.
-
-Since launching the platform, Utosia has seen a steady increase in traffic and sales. The site’s responsiveness across mobile and desktop has further enhanced the customer experience, making it easy for users to shop from any device. This project has helped Utosia carve out a unique space in the competitive sustainable fashion market.
-
-Their brand now connects with sustainability-conscious customers across markets.`,
-    galleryImages: [
-      outopic,
-      sec,
-      carlight,
-      lastcar,
-    ],
+This dashboard combines functionality with modern design aesthetics to deliver a professional trading experience.`,
+    livePreviewLink: "https://trading-dashboard-pi-ten.vercel.app/",
+    viewCodeLink: "https://github.com/SantoshRawat07/Trading_Dashboard",
+    innerPageImage: trading,
   },
 
-  goldline: {
-    id: "goldline",
-    label: "Goldline",
-    title: "GOLDLINE",
-    subtitle: "Goldline curates bespoke luxury",
-    subtitles: "travel experiences.",
-    client: "Goldline",
-    year: "2023",
-    services: "Branding",
-    topImage: bat,
-    descriptionHeading: "EXPERIENCES",
-    subheading: "Goldline is a high-end travel agency that curates bespoke luxury travel experiences.",
-    description: `They approached us to develop a brand and website that reflected their exclusive, high-touch service. Our team began by crafting a luxurious brand identity that communicated elegance, sophistication, and personalized service, ensuring every visual and textual element aligned with their clientele's expectations.
+  artis: {
+    id: "artis",
+    label: "Artist",
+    title: "ARTIST WEBSITE",
+    subtitle: "Creative platform for art,",
+    subtitles: "classes, and custom services.",
+    client: "Artist",
+    year: "2025",
+    services: "Creative Website",
+    topImage: artis,
+    descriptionHeading: "ART SHOWCASE PLATFORM",
+    subheading:
+      "An artistic platform designed to showcase paintings, canvas artwork, art classes, and custom art services.",
+    description: `The Artist Website project was developed to create a modern digital presence for showcasing creative artwork and artistic services. The platform highlights canvas art collections, featured paintings, and custom artwork services through visually rich layouts.
 
-For the website, we developed a sleek, minimalistic design that emphasized breathtaking imagery of Goldline’s destinations. The user experience was designed to be as smooth as possible, with clear navigation that allows clients to easily explore packages, services, and customized offerings. We incorporated interactive elements, such as personalized trip suggestions and destination videos, to engage potential clients.
+The website also includes dedicated sections for art classes, allowing visitors to explore and enroll in creative learning experiences. Large visuals, elegant typography, and smooth layouts were used to reflect the artistic identity of the brand.
 
-The final product not only elevated Goldline’s brand but also enhanced their ability to attract and retain high-net-worth clients. Post-launch, Goldline saw a marked increase in inquiries and bookings, as the site’s design and user experience played a critical role in converting visitors into clients. The project exemplified the impact of thoughtful design in creating a luxurious digital presence.
+We focused heavily on user experience and storytelling through design, ensuring every section feels immersive and creative. The responsive structure guarantees accessibility across all devices while maintaining visual quality.
 
-The product gained traction pre-launch and exceeded initial sales projections.`,
-    galleryImages: [
-      goldpic,
-      footgold,
-      capman,
-      handman,
-    ],
+This project demonstrates creativity in UI/UX design combined with strong frontend development skills for portfolio and service-based websites.`,
+    livePreviewLink: "https://nepakanvas-uyd8.vercel.app/",
+    viewCodeLink: "https://github.com/SantoshRawat07/Nepakanvas",
+    innerPageImage: artis,
   },
 
+  homesphere: {
+    id: "homesphere",
+    label: "Homesphere",
+    title: "HOMESPHERE",
+    subtitle: "All home equipment in",
+    subtitles: "one e-commerce platform.",
+    client: "Homesphere",
+    year: "2025",
+    services: "E-commerce",
+    topImage: homesphere,
+    descriptionHeading: "HOME EQUIPMENT STORE",
+    subheading:
+      "Homesphere is a complete e-commerce platform for purchasing home appliances and equipment from one place.",
+    description: `Homesphere was developed as a modern e-commerce solution focused on home appliances and equipment. The platform allows users to browse products by categories, explore featured items, and manage shopping interactions smoothly.
+
+The project includes modern product cards, filtering systems, category sections, responsive layouts, and user-friendly navigation to improve the shopping experience. The goal was to create a professional online store that feels clean, fast, and visually engaging.
+
+Special attention was given to responsive design and reusable components to maintain consistency across the platform. Product showcases and interactive layouts were designed to improve customer engagement and usability.
+
+Homesphere represents a complete frontend e-commerce experience with scalable design patterns and practical online shopping functionality.`,
+    livePreviewLink: "https://homesphere-website.vercel.app/",
+    viewCodeLink: "https://github.com/SantoshRawat07/Homesphere_website",
+    innerPageImage: homesphere,
+  },
 };
 
 export default cardData;
