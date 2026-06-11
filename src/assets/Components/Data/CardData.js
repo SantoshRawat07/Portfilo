@@ -1,6 +1,6 @@
 // Import all images
 import foodland from '../../Image/foodlandweb.png';
-import homesphere from '../../Image/homesphere.png';
+import homesphere from '../../Image/Homesphere.png';
 import trading from '../../Image/trading.png';
 import artis from '../../Image/artist.png';
 
