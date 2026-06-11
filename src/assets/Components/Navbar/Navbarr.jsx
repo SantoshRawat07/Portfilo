@@ -32,42 +32,42 @@ function Navbarr({ visible = true, scrolledUp = true }) {
   }, [isOpen]);
 
   return (
-      <nav
+    <nav
       className={`w-full fixed top-0 left-0 z-60 transition-transform duration-300
         ${visible ? 'translate-y-0' : '-translate-y-full'}
         ${scrolledUp ? 'bg-white text-black' : 'bg-transparent text-white'}
       `}
     >
       <div className="bg-gray max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-        
+
         {/* Left: Logo */}
-      <div className="flex-shrink-0">
-  <Link to="/" className="text-4xl font-extrabold">DEV.SRC</Link>
-</div>
+        <div className="flex-shrink-0">
+          <Link to="/" className="text-4xl font-extrabold">DEV.SRC</Link>
+        </div>
 
-{/* Center: Nav Links */}
-<div className="hidden lg:flex flex-1 justify-center">
-  <ul className="flex space-x-12 font-semibold">
-    <li><Link to="/projects" className="nav-link">Projects</Link></li>
-    <li><Link to="/service" className="nav-link">Service</Link></li>
-    <li><Link to="/about" className="nav-link">About</Link></li>
-    <li><Link to="/blog" className="nav-link">Blog</Link></li>
-  </ul>
-</div>
+        {/* Center: Nav Links */}
+        <div className="hidden lg:flex flex-1 justify-center">
+          <ul className="flex space-x-12 font-semibold">
+            <li><Link to="/projects" className="nav-link">Projects</Link></li>
+            <li><Link to="/service" className="nav-link">Service</Link></li>
+            <li><Link to="/about" className="nav-link">About</Link></li>
+            <li><Link to="/blog" className="nav-link">Blog</Link></li>
+          </ul>
+        </div>
 
-{/* Right: Let's Talk */}
-<div className="hidden lg:block">
-  <Link to="/letstalk" className="lets-talk font-medium">Let's Talk</Link>
-</div>
+        {/* Right: Let's Talk — no navigation, just opens chatbot */}
+        <div className="hidden lg:block">
+          <span className="lets-talk font-medium cursor-default">Let's Talk</span>
+        </div>
 
-{/* Mobile: Toggle and Let's Talk */}
-<div className="lg:hidden flex items-center space-x-4">
-  <Link to="/letstalk" className="underline font-semibold">Let's Talk</Link>
-  <button onClick={openMenu}>
-    <FaBars className="text-2xl" />
-  </button>
-</div>
-</div>
+        {/* Mobile: Toggle and Let's Talk */}
+        <div className="lg:hidden flex items-center space-x-4">
+          <span className="underline font-semibold cursor-default">Let's Talk</span>
+          <button onClick={openMenu}>
+            <FaBars className="text-2xl" />
+          </button>
+        </div>
+      </div>
 
       {/* Mobile Overlay Menu */}
       {isOpen && (
@@ -78,7 +78,7 @@ function Navbarr({ visible = true, scrolledUp = true }) {
           {/* Mobile Top Bar */}
           <div className="absolute top-6 left-6 text-2xl font-extrabold text-black">DEV.SRC</div>
           <div className="absolute top-6 right-6 flex items-center space-x-4">
-            <Link to="/letstalk" className="underline font-semibold text-black">Let's Talk</Link>
+            <span className="underline font-semibold text-black cursor-default">Let's Talk</span>
             <button onClick={closeMenu}>
               <FaTimes className="text-2xl text-black" />
             </button>
@@ -91,7 +91,6 @@ function Navbarr({ visible = true, scrolledUp = true }) {
               { name: 'Service', path: '/service' },
               { name: 'About', path: '/about' },
               { name: 'Blog', path: '/blog' },
-              { name: 'Contact', path: '/letstalk' }
             ].map((item) => (
               <Link
                 key={item.name}

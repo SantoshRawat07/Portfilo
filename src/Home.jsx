@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Letstalk from './assets/Pages/Letstalk';
 import App from './App';
 import Projects from './assets/Pages/projects.jsx';
 import Navbarr from './assets/Components/Navbar/Navbarr.jsx';
@@ -10,6 +9,7 @@ import Notfound from './assets/Components/404/Notfound.jsx';
 import About from './assets/Pages/About.jsx';
 import Blog from './assets/Pages/Blog.jsx';
 import Bloginnerpage from './assets/Pages/Bloginnerpage.jsx';
+import AIchat from './Aichat.jsx';
 
 
 
@@ -40,13 +40,13 @@ function AppRouter() {
       <Navbarr visible={showNavbar} scrolledUp={scrolledUp} />
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/letstalk" element={<Letstalk />} />
         <Route path="/projects" element={<Projects />} />
          <Route path="/service" element={<Ourservice/>}/>
          <Route path="/about" element={<About/>}/>
          <Route path="/blog" element= {<Blog/>} />
          <Route path="/project/:id" element={<Innerpage />}/>
           <Route path="/blog/:id" element={<Bloginnerpage />} />
+         <Route path="/ai-chat" element={<AIchat />} />
          <Route path="*" element= {<Notfound/>} />
         
       </Routes>
